@@ -1,0 +1,22 @@
+// SECTION :: START
+
+section#partners.partners
+	.c-grid
+		.partners__wrapper
+			.partners__wrapper-left
+				a.partners__btn.partners__btn--prev(href="#")
+					i.icon-font.icon-arrow
+			.partners__wrapper-middle
+
+				mixin swiperContent()
+					each val, idx in [1,2,3,4,5,6]
+						.swiper-slide
+							img(src="img/img-partners-" + val + ".png" srcset="img/img-partners-" + val + "@2x.png 2x" alt="")
+
+				+swiper('partnersSlider', 'swiperContent', false, false, false)
+
+			.partners__wrapper-right
+				a.partners__btn.partners__btn--next(href="#")
+					i.icon-font.icon-arrow
+
+// SECTION :: END
