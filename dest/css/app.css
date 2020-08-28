@@ -420,6 +420,159 @@ picture {
   margin-right: auto;
 }
 
+/* line 3, src/scss/_components/_welcome.scss */
+.welcome {
+  position: relative;
+  padding-top: 300px;
+  padding-bottom: 370px;
+}
+
+/* line 8, src/scss/_components/_welcome.scss */
+.welcome__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, src/scss/_components/_welcome.scss */
+.welcome__bg-square {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 100%;
+  max-width: 617px;
+  height: 795px;
+  background-color: #ede6e8;
+}
+
+/* line 26, src/scss/_components/_welcome.scss */
+.welcome__bg-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+/* line 31, src/scss/_components/_welcome.scss */
+.welcome__bg-line-1 {
+  max-width: 641px;
+  top: 78px;
+}
+
+/* line 36, src/scss/_components/_welcome.scss */
+.welcome__bg-line-2 {
+  max-width: 378px;
+  bottom: 140px;
+}
+
+/* line 41, src/scss/_components/_welcome.scss */
+.welcome__bg-line > div {
+  width: 100%;
+  height: 1px;
+  background-color: #b1e4e8;
+}
+
+/* line 46, src/scss/_components/_welcome.scss */
+.welcome__bg-line > div:not(:last-of-type) {
+  margin-bottom: 59px;
+}
+
+/* line 50, src/scss/_components/_welcome.scss */
+.welcome__bg-line > div:nth-of-type(2) {
+  width: -webkit-calc(100% - 48px);
+  width: calc(100% - 48px);
+}
+
+/* line 53, src/scss/_components/_welcome.scss */
+.welcome__bg-line > div:nth-of-type(3) {
+  width: -webkit-calc(100% - 96px);
+  width: calc(100% - 96px);
+}
+
+/* line 56, src/scss/_components/_welcome.scss */
+.welcome__bg-line > div:nth-of-type(4) {
+  width: -webkit-calc(100% - 144px);
+  width: calc(100% - 144px);
+}
+
+/* line 63, src/scss/_components/_welcome.scss */
+.welcome__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 68, src/scss/_components/_welcome.scss */
+.welcome__wrapper-left, .welcome__wrapper-right {
+  width: 50%;
+}
+
+/* line 74, src/scss/_components/_welcome.scss */
+.welcome__wrapper-left > div {
+  width: 100%;
+  max-width: 570px;
+}
+
+/* line 80, src/scss/_components/_welcome.scss */
+.welcome__wrapper-right {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 15px;
+}
+
+/* line 86, src/scss/_components/_welcome.scss */
+.welcome__wrapper-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 94, src/scss/_components/_welcome.scss */
+.welcome__subtitle {
+  padding-bottom: 56px;
+  font-size: 24px;
+}
+
+/* line 99, src/scss/_components/_welcome.scss */
+.welcome__desc {
+  padding-right: 15px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+/* line 106, src/scss/_components/_welcome.scss */
+.welcome__slogan {
+  padding-bottom: 105px;
+  font-size: 24px;
+  font-style: italic;
+  color: #9d9999;
+}
+
+/* line 113, src/scss/_components/_welcome.scss */
+.welcome__name {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #9f9f9f;
+  -webkit-transform: translate(0, -40px) rotate(-90deg);
+      -ms-transform: translate(0, -40px) rotate(-90deg);
+          transform: translate(0, -40px) rotate(-90deg);
+}
+
 /* line 5, src/scss/_components/_procedures.scss */
 .procedures__wrapper {
   display: -webkit-box;
