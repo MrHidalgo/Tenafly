@@ -1,0 +1,88 @@
+// SECTION :: START
+
+.procedures {
+
+	&__wrapper {
+		display: flex;
+		height: 915px;
+		background-image: url('../img/img-procedures-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		&-left {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			max-width: calc(50% + 105px);
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-left: 150px;
+
+			> div {
+				width: 100%;
+				max-width: 465px;
+			}
+		}
+	}
+
+	&__title {
+		padding-bottom: 81px;
+	}
+
+	&__desc {
+		padding-bottom: 79px;
+		color: #181818;
+		font-size: 14px;
+		line-height: 36px;
+	}
+
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 127px;
+
+		a {
+			margin-bottom: 23px;
+
+			&:not(:last-of-type) {
+				margin-right: 23px;
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: flex-end;
+
+		a {
+			display: flex;
+			align-items: center;
+			color: #181819;
+			text-transform: uppercase;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+
+			i {
+				position: relative;
+				top: -1px;
+				padding-left: 3px;
+				font-size: 12px;
+				font-style: normal;
+			}
+		}
+	}
+}
+
+// SECTION :: END

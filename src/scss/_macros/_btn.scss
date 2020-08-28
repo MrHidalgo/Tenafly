@@ -25,6 +25,11 @@
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
 	}
+
+	&--border {
+		background-color: transparent;
+		border: 1px solid #181819;
+	}
 }
 
 // BUTTON :: END
