@@ -35,4 +35,27 @@ const initSwiper = () => {
       prevEl: '.partners__btn--prev',
     }
   });
+
+  const staffSlider = new Swiper('.staffSlider', {
+		freeMode: false,
+    loop: false,
+    effect: 'slide',
+   	speed: 800,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+		touchMoveStopPropagation:false,
+		simulateTouch : false,
+		allowSwipeToNext: true,
+		allowSwipeToPrev: true,
+		allowPageScroll: "auto ",
+    navigation: {
+      nextEl: '.staff__btn--next',
+      prevEl: '.staff__btn--prev',
+    },
+		on: {
+			"init" : function() {
+				this.snapGrid = [...this.slidesGrid];
+			}
+		}
+  });
 };

@@ -27,11 +27,14 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow {
+	@if $filename == arrow-play {
 		$char: "\E001";
 	}
-	@if $filename == star {
+	@if $filename == arrow {
 		$char: "\E002";
+	}
+	@if $filename == star {
+		$char: "\E003";
 	}
 
 	@return $char;
@@ -48,6 +51,10 @@
 	}
 }
 
+.icon-arrow-play {
+	@include icon(arrow-play);
+
+}
 .icon-arrow {
 	@include icon(arrow);
 

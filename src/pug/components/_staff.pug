@@ -1,0 +1,55 @@
+// SECTION :: START
+
+section#staff.staff
+
+	.staff__slider
+		.staff__slider-left
+		.staff__slider-right
+
+			.staff__slider-container
+
+				mixin swiperContent()
+					each val, idx in [1,2]
+						.swiper-slide
+							.swiper-slide-content
+								div
+									img(src="img/img-staff-1.jpg" srcset="img/img-staff-1@2x.jpg 2x" alt="")
+								p Dr. Liron Gamzeh
+								span Restorative Dentist
+
+						.swiper-slide
+							.swiper-slide-content
+								div
+									img(src="img/img-staff-2.jpg" srcset="img/img-staff-2@2x.jpg 2x" alt="")
+								p Mary Gallucci
+								span Office Manager
+
+						.swiper-slide
+							.swiper-slide-content
+								div
+									img(src="img/img-staff-3.jpg" srcset="img/img-staff-3@2x.jpg 2x" alt="")
+								p Ana Hall Lead
+								span Dental Assistant
+
+				+swiper('staffSlider', 'swiperContent', false, false, false)
+
+		.staff__slider-bottom
+			div
+				a.staff__btn.staff__btn--prev(href="#")
+					i.icon-font.icon-arrow-play
+				a.staff__btn.staff__btn--next(href="#")
+					i.icon-font.icon-arrow-play
+
+
+	.c-grid
+		.staff__wrapper
+			.staff__wrapper-left
+
+				p.staff__title.c-title.c-title--dark Our Staff
+				p.staff__desc
+					strong Highly Educated, Experienced and Warm
+				p.staff__desc Dr. Liron Gamzeh, dentist in Tenafly, NJ, graduated from Columbia University College of Dental Medicine and then completed his residency at the Veteran's Affairs in New Jersey.
+
+			.staff__wrapper-right
+
+// SECTION :: END

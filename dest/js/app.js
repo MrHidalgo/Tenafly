@@ -1,5 +1,7 @@
 "use strict";
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 /*
 *
 * ============================
@@ -67,6 +69,29 @@ var initSwiper = function initSwiper() {
     navigation: {
       nextEl: '.partners__btn--next',
       prevEl: '.partners__btn--prev'
+    }
+  });
+
+  var staffSlider = new Swiper('.staffSlider', {
+    freeMode: false,
+    loop: false,
+    effect: 'slide',
+    speed: 800,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    touchMoveStopPropagation: false,
+    simulateTouch: false,
+    allowSwipeToNext: true,
+    allowSwipeToPrev: true,
+    allowPageScroll: "auto ",
+    navigation: {
+      nextEl: '.staff__btn--next',
+      prevEl: '.staff__btn--prev'
+    },
+    on: {
+      "init": function init() {
+        this.snapGrid = [].concat(_toConsumableArray(this.slidesGrid));
+      }
     }
   });
 };
