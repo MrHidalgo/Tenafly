@@ -30,6 +30,9 @@
 	@if $filename == arrow {
 		$char: "\E001";
 	}
+	@if $filename == star {
+		$char: "\E002";
+	}
 
 	@return $char;
 }
@@ -47,5 +50,9 @@
 
 .icon-arrow {
 	@include icon(arrow);
+
+}
+.icon-star {
+	@include icon(star);
 
 }
