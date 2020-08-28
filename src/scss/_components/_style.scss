@@ -1,0 +1,96 @@
+// SECTION :: START
+
+.style {
+	padding-top: 118px;
+	padding-bottom: 118px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-right: 10px;
+		}
+
+		&-right {
+			width: 100%;
+			max-width: 360px;
+			padding-top: 100px;
+			padding-left: 32px;
+			padding-right: 65px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 67px;
+	}
+
+	&__desc {
+		padding-bottom: 86px;
+		font-size: 14px;
+		line-height: 36px;
+	}
+
+	&__block {
+		display: flex;
+		min-height: 772px;
+		background-color: #020202;
+
+		&-left {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 360px;
+
+			> div {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				max-height: calc(100% / 3);
+				padding: 65px;
+
+				&:not(:last-of-type) {
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						right: 5px;
+						width: 100%;
+						max-width: 213px;
+						height: 1px;
+						background-color: #ffffff;
+					}
+				}
+			}
+
+			p {
+				padding-bottom: 19px;
+				font-family: 'Raleway', sans-serif;
+				color: #b1e4e8;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+
+			span {
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+
+		&-right {
+			position: relative;
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+	}
+}
+
+// SECTION :: END
