@@ -64,6 +64,8 @@
   }
 
   &::after {
-    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+		width: calc(100% - 12px);
+		right: 0;
+		bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
 }
