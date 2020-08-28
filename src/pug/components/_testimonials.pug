@@ -2,24 +2,24 @@
 
 section#testimonials.testimonials
 
-	.testimonials__bg
-		img(src="img/img-testimonials-bg.png" srcset="img/img-testimonials-bg@2x.png 2x" alt="")
+	.testimonials__bg(parallax-js)
+		img(src="img/img-testimonials-bg.png" srcset="img/img-testimonials-bg@2x.png 2x" alt="" data-stellar-ratio="0.95")
 
 	.c-grid
 		.testimonials__wrapper
 			.testimonials__wrapper-left
 
-				p.testimonials__title.c-title.c-title--dark!= "Patient <br>Testimonials"
-				p.testimonials__desc At Tenafly Dental Associates we highly value patient care and quality service. See what our amazing patients are saying about us.
+				p.testimonials__title.c-title.c-title--dark(data-aos="fade-up")!= "Patient <br>Testimonials"
+				p.testimonials__desc(data-aos="fade-up") At Tenafly Dental Associates we highly value patient care and quality service. See what our amazing patients are saying about us.
 
-				.c-btn__wrapper
+				.c-btn__wrapper(data-aos="fade-up")
 					a.c-btn(href="#")
 						span View More
 
 			.testimonials__wrapper-right
 
 				.testimonials__block-wrapper
-					.testimonials__block.testimonials__block-1
+					.testimonials__block.testimonials__block-1(floating-node-js)
 						.testimonials__block-bg
 							span MA
 						.testimonials__block-content
@@ -31,7 +31,7 @@ section#testimonials.testimonials
 								i.icon-font.icon-star
 							p My husband and I both love this dentist office.  The staff and doctor are amazing!  The office is clean and the care is the best!
 
-					.testimonials__block.testimonials__block-2
+					.testimonials__block.testimonials__block-2(floating-node-js)
 						.testimonials__block-bg
 							span AE
 						.testimonials__block-content
@@ -43,7 +43,7 @@ section#testimonials.testimonials
 								i.icon-font.icon-star
 							p Unmatched. Mary, Madison, Doc! Great vibes place all around. Exceptionally ran office. Sent both my sisters here already. Come through and see what you're missing.
 
-					.testimonials__block.testimonials__block-3
+					.testimonials__block.testimonials__block-3(floating-node-js)
 						.testimonials__block-bg
 							span RM
 						.testimonials__block-content
@@ -55,7 +55,7 @@ section#testimonials.testimonials
 								i.icon-font.icon-star
 							p As a new patient, I couldn't have been more impressed by Dr. Gamzeh and staff. Super friendly atmosphere where they actually take the time to make sure you are comfortable while being efficient at the same time. I couldn't have picked a better dentist after having to change insurance providers
 
-					.testimonials__block.testimonials__block-4
+					.testimonials__block.testimonials__block-4(floating-node-js)
 						.testimonials__block-bg
 							span LC
 						.testimonials__block-content

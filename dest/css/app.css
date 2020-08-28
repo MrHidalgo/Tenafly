@@ -919,9 +919,8 @@ picture {
 .welcome__bg-square {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin-top: -webkit-calc(-795px / 2);
+  margin-top: calc(-795px / 2);
   right: 0;
   width: 100%;
   max-width: 617px;
@@ -1092,20 +1091,21 @@ picture {
   min-width: 1px;
   max-width: 100%;
   padding-left: 150px;
+  padding-right: 15px;
 }
 
-/* line 32, src/scss/_components/_procedures.scss */
+/* line 33, src/scss/_components/_procedures.scss */
 .procedures__wrapper-right > div {
   width: 100%;
   max-width: 465px;
 }
 
-/* line 39, src/scss/_components/_procedures.scss */
+/* line 40, src/scss/_components/_procedures.scss */
 .procedures__title {
   padding-bottom: 81px;
 }
 
-/* line 43, src/scss/_components/_procedures.scss */
+/* line 44, src/scss/_components/_procedures.scss */
 .procedures__desc {
   padding-bottom: 79px;
   color: #181818;
@@ -1113,7 +1113,7 @@ picture {
   line-height: 36px;
 }
 
-/* line 50, src/scss/_components/_procedures.scss */
+/* line 51, src/scss/_components/_procedures.scss */
 .procedures__tags {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1125,17 +1125,17 @@ picture {
   padding-bottom: 127px;
 }
 
-/* line 55, src/scss/_components/_procedures.scss */
+/* line 56, src/scss/_components/_procedures.scss */
 .procedures__tags a {
   margin-bottom: 23px;
 }
 
-/* line 58, src/scss/_components/_procedures.scss */
+/* line 59, src/scss/_components/_procedures.scss */
 .procedures__tags a:not(:last-of-type) {
   margin-right: 23px;
 }
 
-/* line 64, src/scss/_components/_procedures.scss */
+/* line 65, src/scss/_components/_procedures.scss */
 .procedures__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1147,7 +1147,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 68, src/scss/_components/_procedures.scss */
+/* line 69, src/scss/_components/_procedures.scss */
 .procedures__link a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1164,7 +1164,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 78, src/scss/_components/_procedures.scss */
+/* line 79, src/scss/_components/_procedures.scss */
 .procedures__link a:hover i {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -1176,7 +1176,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 84, src/scss/_components/_procedures.scss */
+/* line 85, src/scss/_components/_procedures.scss */
 .procedures__link a i {
   position: relative;
   top: -1px;
@@ -1347,9 +1347,10 @@ picture {
   width: 100%;
   max-width: -webkit-calc(50% - 225px);
   max-width: calc(50% - 225px);
+  padding-left: 15px;
 }
 
-/* line 30, src/scss/_components/_staff.scss */
+/* line 31, src/scss/_components/_staff.scss */
 .staff__slider-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1359,12 +1360,12 @@ picture {
   max-width: 100%;
 }
 
-/* line 36, src/scss/_components/_staff.scss */
+/* line 37, src/scss/_components/_staff.scss */
 .staff__slider-bottom {
   width: 100%;
 }
 
-/* line 39, src/scss/_components/_staff.scss */
+/* line 40, src/scss/_components/_staff.scss */
 .staff__slider-bottom > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1384,12 +1385,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 50, src/scss/_components/_staff.scss */
+/* line 51, src/scss/_components/_staff.scss */
 .staff__slider-container {
   padding-bottom: 38px;
 }
 
-/* line 55, src/scss/_components/_staff.scss */
+/* line 56, src/scss/_components/_staff.scss */
 .staff__wrapper {
   z-index: 0;
   position: absolute;
@@ -1410,14 +1411,14 @@ picture {
   width: 100%;
 }
 
-/* line 66, src/scss/_components/_staff.scss */
+/* line 67, src/scss/_components/_staff.scss */
 .staff__wrapper-left {
   width: 100%;
   max-width: 360px;
   padding-right: 15px;
 }
 
-/* line 72, src/scss/_components/_staff.scss */
+/* line 73, src/scss/_components/_staff.scss */
 .staff__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1427,61 +1428,61 @@ picture {
   max-width: 100%;
 }
 
-/* line 79, src/scss/_components/_staff.scss */
+/* line 80, src/scss/_components/_staff.scss */
 .staff__title {
   padding-bottom: 87px;
 }
 
-/* line 83, src/scss/_components/_staff.scss */
+/* line 84, src/scss/_components/_staff.scss */
 .staff__desc {
   color: #181818;
   line-height: 36px;
 }
 
-/* line 87, src/scss/_components/_staff.scss */
+/* line 88, src/scss/_components/_staff.scss */
 .staff__desc strong {
   font-weight: 700;
 }
 
-/* line 94, src/scss/_components/_staff.scss */
+/* line 95, src/scss/_components/_staff.scss */
 .staff__btn--prev .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 99, src/scss/_components/_staff.scss */
+/* line 100, src/scss/_components/_staff.scss */
 .staff__btn .icon-font {
   color: #b1e4e8;
   font-size: 32px;
 }
 
-/* line 106, src/scss/_components/_staff.scss */
+/* line 107, src/scss/_components/_staff.scss */
 .staff .swiper-slide {
   width: 397px !important;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-/* line 110, src/scss/_components/_staff.scss */
+/* line 111, src/scss/_components/_staff.scss */
 .staff .swiper-slide-active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-/* line 114, src/scss/_components/_staff.scss */
+/* line 115, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content {
   text-align: center;
 }
 
-/* line 117, src/scss/_components/_staff.scss */
+/* line 118, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content > div {
   position: relative;
   width: 100%;
   height: 561px;
 }
 
-/* line 127, src/scss/_components/_staff.scss */
+/* line 128, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content p {
   color: #181818;
   padding-top: 22px;
@@ -1489,7 +1490,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 134, src/scss/_components/_staff.scss */
+/* line 135, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content span {
   color: #a8a5a5;
   font-size: 14px;

@@ -1,17 +1,17 @@
 // SECTION :: START
 
-section#procedures.procedures
+section#procedures.procedures(parallax-js)
 
-	.procedures__wrapper
+	.procedures__wrapper(data-stellar-background-ratio="1.05")
 		.procedures__wrapper-left
-			img(src="img/img-procedures.jpg" srcset="img/img-procedures@2x.jpg 2x" alt="")
+			img(src="img/img-procedures.jpg" srcset="img/img-procedures@2x.jpg 2x" alt="" data-stellar-ratio="0.975")
 
 		.procedures__wrapper-right
 			div
-				p.procedures__title.c-title.c-title--dark!= "Dental <br>Procedures"
-				p.procedures__desc Treat yourself to our most popular dental services. All of our treatments and services are provided in a comfortable, professional office, designed according to high-quality standards.
+				p.procedures__title.c-title.c-title--dark(data-aos="fade-up")!= "Dental <br>Procedures"
+				p.procedures__desc(data-aos="fade-up") Treat yourself to our most popular dental services. All of our treatments and services are provided in a comfortable, professional office, designed according to high-quality standards.
 
-				.procedures__tags
+				.procedures__tags(data-aos="fade-up")
 					a.c-btn.c-btn--border(href="#")
 						span Dental Implants
 					a.c-btn.c-btn--border(href="#")
@@ -21,7 +21,7 @@ section#procedures.procedures
 					a.c-btn.c-btn--border(href="#")
 						span teeth Whitening
 
-				.procedures__link
+				.procedures__link(data-aos="fade-up")
 					a(href="#")
 						span View All
 						i >>

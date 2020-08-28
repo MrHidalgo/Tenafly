@@ -6,7 +6,7 @@ section#staff.staff
 		.staff__slider-left
 		.staff__slider-right
 
-			.staff__slider-container
+			.staff__slider-container(data-aos="fade-up")
 
 				mixin swiperContent()
 					each val, idx in [1,2]
@@ -33,7 +33,7 @@ section#staff.staff
 
 				+swiper('staffSlider', 'swiperContent', false, false, false)
 
-		.staff__slider-bottom
+		.staff__slider-bottom(data-aos="fade-up")
 			div
 				a.staff__btn.staff__btn--prev(href="#")
 					i.icon-font.icon-arrow-play
@@ -43,7 +43,7 @@ section#staff.staff
 
 	.c-grid
 		.staff__wrapper
-			.staff__wrapper-left
+			.staff__wrapper-left(data-aos="fade-up")
 
 				p.staff__title.c-title.c-title--dark Our Staff
 				p.staff__desc
