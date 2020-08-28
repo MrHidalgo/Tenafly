@@ -1,13 +1,15 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 36px;
 
-  &__icon {
-    &-wrap {}
-  }
+	&--black {
+		color: #181818;
+	}
 }
 
 // TITLE :: END

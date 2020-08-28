@@ -1,0 +1,78 @@
+// SECTION :: START
+
+.insurance {
+	padding-top: 83px;
+	padding-bottom: 61px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			position: relative;
+			width: 100%;
+			max-width: 704px;
+			height: 863px;
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-top: 35px;
+			padding-bottom: 47px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 50px 0 50px 150px;
+		background-image: url('../img/img-insurance-bg@2x.jpg');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: cover;
+	}
+
+	&__title {
+		min-height: 153px;
+		padding-bottom: 51px;
+	}
+
+	&__desc {
+		line-height: 36px;
+		font-size: 14px;
+		color: #ffffff;
+
+		&-2 {
+			padding-bottom: 77px;
+		}
+	}
+
+	&__block {
+		width: 100%;
+
+		&:not(:last-of-type) {
+			margin-right: 120px;
+		}
+
+		&-1 {
+			max-width: 255px;
+		}
+
+		&-2 {
+			max-width: 385px;
+		}
+
+		&-wrapper {
+			display: flex;
+		}
+	}
+}
+
+// SECTION :: END
