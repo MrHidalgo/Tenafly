@@ -17,6 +17,10 @@
 
   &__wrapper {
 		display: flex;
+
+		&--center {
+			justify-content: center;
+		}
 	}
 
 	span {

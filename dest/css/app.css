@@ -321,7 +321,15 @@ picture {
   display: flex;
 }
 
-/* line 22, src/scss/_macros/_btn.scss */
+/* line 21, src/scss/_macros/_btn.scss */
+.c-btn__wrapper--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 26, src/scss/_macros/_btn.scss */
 .c-btn span {
   color: #181819;
   font-size: 16px;
@@ -329,7 +337,7 @@ picture {
   letter-spacing: 0.5px;
 }
 
-/* line 29, src/scss/_macros/_btn.scss */
+/* line 33, src/scss/_macros/_btn.scss */
 .c-btn--border {
   background-color: transparent;
   border: 1px solid #181819;
@@ -418,6 +426,126 @@ picture {
   max-height: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 3, src/scss/_components/_main.scss */
+.main {
+  position: relative;
+  background-image: url("../img/img-main@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 10, src/scss/_components/_main.scss */
+.main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+/* line 16, src/scss/_components/_main.scss */
+.main__wrapper > div {
+  width: 100%;
+  max-width: 522px;
+}
+
+/* line 22, src/scss/_components/_main.scss */
+.main__box {
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.49);
+  margin-bottom: 49px;
+}
+
+/* line 27, src/scss/_components/_main.scss */
+.main__box > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 222px;
+  background-color: #ffffff;
+}
+
+/* line 36, src/scss/_components/_main.scss */
+.main__box p {
+  padding-bottom: 47px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 44, src/scss/_components/_main.scss */
+.main__box p strong {
+  font-weight: 700;
+}
+
+/* line 49, src/scss/_components/_main.scss */
+.main__box span {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 54, src/scss/_components/_main.scss */
+.main__box span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+/* line 65, src/scss/_components/_main.scss */
+.main__box span u {
+  z-index: 2;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ffffff;
+  font-size: 12px;
+  color: #3c3b3b;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* line 3, src/scss/_components/_welcome.scss */
