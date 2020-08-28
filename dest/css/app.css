@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+/* line 1, src/scss/_shared/_main-setting-reset.scss */
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 6, src/scss/_shared/_main-setting-reset.scss */
+html.is-hideScroll,
+body.is-hideScroll {
+  overflow: hidden !important;
+}
+
+/* line 12, src/scss/_shared/_main-setting-reset.scss */
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 18, src/scss/_shared/_main-setting-reset.scss */
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  line-height: 1.42857143;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 32, src/scss/_shared/_main-setting-reset.scss */
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 37, src/scss/_shared/_main-setting-reset.scss */
+body > .body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* line 43, src/scss/_shared/_main-setting-reset.scss */
+body > .body--start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 50, src/scss/_shared/_main-setting-reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 53, src/scss/_shared/_main-setting-reset.scss */
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 60, src/scss/_shared/_main-setting-reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 70, src/scss/_shared/_main-setting-reset.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 76, src/scss/_shared/_main-setting-reset.scss */
+button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* line 82, src/scss/_shared/_main-setting-reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 88, src/scss/_shared/_main-setting-reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 94, src/scss/_shared/_main-setting-reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 99, src/scss/_shared/_main-setting-reset.scss */
+p,
+h1, h2, h3, h4, h5, h6,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 107, src/scss/_shared/_main-setting-reset.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 112, src/scss/_shared/_main-setting-reset.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 118, src/scss/_shared/_main-setting-reset.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 123, src/scss/_shared/_main-setting-reset.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 130, src/scss/_shared/_main-setting-reset.scss */
+input[type="text"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* line 134, src/scss/_shared/_main-setting-reset.scss */
+picture {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, src/scss/_shared/_grid.scss */
+.c-grid, .c-grid-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 20, src/scss/_shared/_grid.scss */
+.c-grid {
+  max-width: 1470;
+}
+
+/* line 27, src/scss/_shared/_grid.scss */
+.c-grid-fluid {
+  max-width: 100%;
+}
+
+/* line 3, src/scss/_shared/_common.scss */
+.copyright {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 7, src/scss/_shared/_common.scss */
+.copyright__text {
+  color: #e5e5e5;
+  font-size: 13px;
+}
+
+/* line 3, src/scss/_components/_footer.scss */
+.footer {
+  padding-top: 99px;
+  padding-bottom: 140px;
+  background-color: #181818;
+}
+
+/* line 8, src/scss/_components/_footer.scss */
+.footer__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+/* line 14, src/scss/_components/_footer.scss */
+.footer__nav-link {
+  margin-left: 23px;
+  margin-right: 23px;
+  color: #e5e5e5;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* line 23, src/scss/_components/_footer.scss */
+.footer__info {
+  width: 100%;
+  max-width: 852px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+  font-size: 13px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+/* line 33, src/scss/_components/_footer.scss */
+.footer__info h6 {
+  padding-bottom: 44px;
+  font-weight: 400;
+}
+
+/* line 39, src/scss/_components/_footer.scss */
+.footer__info p strong {
+  font-weight: 700;
+}
+
+/* line 43, src/scss/_components/_footer.scss */
+.footer__info p a,
+.footer__info p span {
+  color: #e5e5e5;
+}
+
+/* line 50, src/scss/_components/_footer.scss */
+.footer__rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 57px;
+}
+
+/* line 55, src/scss/_components/_footer.scss */
+.footer__rating img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=maps/app.css.map */
