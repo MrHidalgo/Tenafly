@@ -648,9 +648,46 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 79px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* line 18, src/scss/_components/_header.scss */
+/* line 19, src/scss/_components/_header.scss */
+.header__wrapper-left, .header__wrapper-right {
+  width: 200px;
+}
+
+/* line 24, src/scss/_components/_header.scss */
+.header__wrapper-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 32, src/scss/_components/_header.scss */
+.header__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 38, src/scss/_components/_header.scss */
 .header__num {
   font-size: 14px;
   color: #ffffff;
