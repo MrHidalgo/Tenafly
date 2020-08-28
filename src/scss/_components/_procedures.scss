@@ -74,12 +74,20 @@
 			font-weight: 700;
 			font-size: 16px;
 
+			&:hover {
+				i {
+					transform: translateX(100%);
+					@include transition(transform);
+				}
+			}
+
 			i {
 				position: relative;
 				top: -1px;
 				padding-left: 3px;
 				font-size: 12px;
 				font-style: normal;
+				@include transition(transform);
 			}
 		}
 	}

@@ -396,7 +396,7 @@ picture {
 
 /* line 20, src/scss/_shared/_grid.scss */
 .c-grid {
-  max-width: 1470px;
+  max-width: 1440px;
 }
 
 /* line 27, src/scss/_shared/_grid.scss */
@@ -487,12 +487,11 @@ picture {
   height: 57px;
   padding-left: 30px;
   padding-right: 30px;
-  border: none;
+  border: 2px solid #b1e4e8;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-border-radius: 0;
           border-radius: 0;
-  background-color: #b1e4e8;
 }
 
 /* line 18, src/scss/_macros/_btn.scss */
@@ -511,18 +510,117 @@ picture {
           justify-content: center;
 }
 
-/* line 26, src/scss/_macros/_btn.scss */
+/* line 27, src/scss/_macros/_btn.scss */
+.c-btn:hover:before, .c-btn:hover:after {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 32, src/scss/_macros/_btn.scss */
+.c-btn:hover:before {
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+/* line 35, src/scss/_macros/_btn.scss */
+.c-btn:hover:after {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+/* line 40, src/scss/_macros/_btn.scss */
+.c-btn:before, .c-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b1e4e8;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 52, src/scss/_macros/_btn.scss */
+.c-btn:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 55, src/scss/_macros/_btn.scss */
+.c-btn:after {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+/* line 59, src/scss/_macros/_btn.scss */
 .c-btn span {
+  z-index: 2;
+  position: relative;
   color: #181819;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 33, src/scss/_macros/_btn.scss */
+/* line 69, src/scss/_macros/_btn.scss */
 .c-btn--border {
   background-color: transparent;
   border: 1px solid #181819;
+}
+
+/* line 74, src/scss/_macros/_btn.scss */
+.c-btn--border:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 77, src/scss/_macros/_btn.scss */
+.c-btn--border:hover:after {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+/* line 81, src/scss/_macros/_btn.scss */
+.c-btn--border:hover span {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 87, src/scss/_macros/_btn.scss */
+.c-btn--border:before, .c-btn--border:after {
+  background-color: #181819;
+}
+
+/* line 92, src/scss/_macros/_btn.scss */
+.c-btn--border:before {
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+/* line 95, src/scss/_macros/_btn.scss */
+.c-btn--border:after {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
 /* line 3, src/scss/_components/_header.scss */
@@ -556,6 +654,7 @@ picture {
 .header__num {
   font-size: 14px;
   color: #ffffff;
+  letter-spacing: 1.5px;
 }
 
 /* line 3, src/scss/_components/_footer.scss */
@@ -584,6 +683,7 @@ picture {
 
 /* line 14, src/scss/_components/_footer.scss */
 .footer__nav-link {
+  position: relative;
   margin-left: 23px;
   margin-right: 23px;
   color: #e5e5e5;
@@ -592,6 +692,42 @@ picture {
 }
 
 /* line 23, src/scss/_components/_footer.scss */
+.footer__nav-link:hover:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0) scaleY(1);
+      -ms-transform: translateY(0) scaleY(1);
+          transform: translateY(0) scaleY(1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 31, src/scss/_components/_footer.scss */
+.footer__nav-link:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -webkit-calc(100% + 5px);
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 47, src/scss/_components/_footer.scss */
 .footer__info {
   width: 100%;
   max-width: 852px;
@@ -603,24 +739,24 @@ picture {
   text-align: center;
 }
 
-/* line 33, src/scss/_components/_footer.scss */
+/* line 57, src/scss/_components/_footer.scss */
 .footer__info h6 {
   padding-bottom: 44px;
   font-weight: 400;
 }
 
-/* line 39, src/scss/_components/_footer.scss */
+/* line 63, src/scss/_components/_footer.scss */
 .footer__info p strong {
   font-weight: 700;
 }
 
-/* line 43, src/scss/_components/_footer.scss */
+/* line 67, src/scss/_components/_footer.scss */
 .footer__info p a,
 .footer__info p span {
   color: #e5e5e5;
 }
 
-/* line 50, src/scss/_components/_footer.scss */
+/* line 74, src/scss/_components/_footer.scss */
 .footer__rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -633,7 +769,7 @@ picture {
   padding-bottom: 57px;
 }
 
-/* line 55, src/scss/_components/_footer.scss */
+/* line 79, src/scss/_components/_footer.scss */
 .footer__rating img {
   display: block;
   max-width: 100%;
@@ -1028,13 +1164,30 @@ picture {
   font-size: 16px;
 }
 
-/* line 77, src/scss/_components/_procedures.scss */
+/* line 78, src/scss/_components/_procedures.scss */
+.procedures__link a:hover i {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 84, src/scss/_components/_procedures.scss */
 .procedures__link a i {
   position: relative;
   top: -1px;
   padding-left: 3px;
   font-size: 12px;
   font-style: normal;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/_style.scss */
@@ -1619,13 +1772,13 @@ picture {
 .testimonials__block-3 {
   z-index: 3;
   left: 0;
-  bottom: 143px;
+  bottom: 150px;
 }
 
 /* line 75, src/scss/_components/_testimonials.scss */
 .testimonials__block-4 {
   z-index: 4;
-  top: 173px;
+  top: 163px;
   right: 0;
 }
 
@@ -1701,7 +1854,7 @@ picture {
 .testimonials__block-content {
   z-index: 2;
   position: relative;
-  padding: 37px;
+  padding: 37px 30px 37px 37px;
   background-color: #ffffff;
 }
 

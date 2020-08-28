@@ -13,6 +13,10 @@ const initSwiper = () => {
    	speed: 800,
     slidesPerView: 6,
     spaceBetween: 0,
+		autoplay: {
+		  delay: 5000,
+			disableOnInteraction: false
+		},
     /*breakpoints: {
       // when window width is <= 320px
       320: {
@@ -38,7 +42,7 @@ const initSwiper = () => {
 
   const staffSlider = new Swiper('.staffSlider', {
 		freeMode: false,
-    loop: false,
+    loop: true,
     effect: 'slide',
    	speed: 800,
     slidesPerView: 'auto',
@@ -47,7 +51,7 @@ const initSwiper = () => {
 		simulateTouch : false,
 		allowSwipeToNext: true,
 		allowSwipeToPrev: true,
-		allowPageScroll: "auto ",
+		allowPageScroll: "auto",
     navigation: {
       nextEl: '.staff__btn--next',
       prevEl: '.staff__btn--prev',

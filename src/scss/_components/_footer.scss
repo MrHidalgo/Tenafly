@@ -12,11 +12,35 @@
 		padding-bottom: 80px;
 
 		&-link {
+			position: relative;
 			margin-left: 23px;
 			margin-right: 23px;
 			color: #e5e5e5;
 			font-size: 13px;
 			text-transform: uppercase;
+
+			&:hover {
+				&:after {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0) scaleY(1);
+					@include transition(opacity, visibility, transform);
+				}
+			}
+
+			&:after {
+				content: '';
+				opacity: 0;
+				visibility: hidden;
+				position: absolute;
+				top: calc(100% + 5px);
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #e5e5e5;
+				transform: translateY(-100%);
+				@include transition(opacity, visibility, transform);
+			}
 		}
 	}
 
