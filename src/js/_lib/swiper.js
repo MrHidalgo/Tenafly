@@ -19,8 +19,8 @@ const initSwiper = () => {
 		},
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 10
+        slidesPerView: 2,
+        spaceBetween: 0
       },
       768: {
         slidesPerView: 3,

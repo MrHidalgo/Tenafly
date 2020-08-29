@@ -1073,7 +1073,6 @@ picture {
 .main {
   position: relative;
   background-image: url("../img/img-main@2x.jpg");
-  background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1087,7 +1086,7 @@ picture {
   }
 }
 
-/* line 14, src/scss/_components/_main.scss */
+/* line 13, src/scss/_components/_main.scss */
 .main__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1105,20 +1104,20 @@ picture {
   min-height: calc(100vh - 79px);
 }
 
-/* line 20, src/scss/_components/_main.scss */
+/* line 19, src/scss/_components/_main.scss */
 .main__wrapper > div {
   width: 100%;
   max-width: 522px;
 }
 
-/* line 26, src/scss/_components/_main.scss */
+/* line 25, src/scss/_components/_main.scss */
 .main__box {
   padding: 18px;
   background-color: rgba(255, 255, 255, 0.49);
   margin-bottom: 49px;
 }
 
-/* line 31, src/scss/_components/_main.scss */
+/* line 30, src/scss/_components/_main.scss */
 .main__box > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1141,7 +1140,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 40, src/scss/_components/_main.scss */
+/* line 39, src/scss/_components/_main.scss */
 .main__box p {
   padding-bottom: 47px;
   text-transform: uppercase;
@@ -1152,19 +1151,19 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 40, src/scss/_components/_main.scss */
+  /* line 39, src/scss/_components/_main.scss */
   .main__box p {
     padding-bottom: 35px;
     font-size: 22px;
   }
 }
 
-/* line 52, src/scss/_components/_main.scss */
+/* line 51, src/scss/_components/_main.scss */
 .main__box p strong {
   font-weight: 700;
 }
 
-/* line 57, src/scss/_components/_main.scss */
+/* line 56, src/scss/_components/_main.scss */
 .main__box span {
   position: relative;
   display: -webkit-box;
@@ -1177,7 +1176,7 @@ picture {
           justify-content: center;
 }
 
-/* line 62, src/scss/_components/_main.scss */
+/* line 61, src/scss/_components/_main.scss */
 .main__box span:before {
   content: '';
   position: absolute;
@@ -1191,7 +1190,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.24);
 }
 
-/* line 73, src/scss/_components/_main.scss */
+/* line 72, src/scss/_components/_main.scss */
 .main__box span u {
   z-index: 2;
   position: relative;
@@ -1208,6 +1207,7 @@ picture {
 
 /* line 3, src/scss/_components/_welcome.scss */
 .welcome {
+  overflow: hidden;
   position: relative;
   padding-top: 300px;
   padding-bottom: 370px;
@@ -1220,7 +1220,7 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/_welcome.scss */
+/* line 12, src/scss/_components/_welcome.scss */
 .welcome__bg {
   position: absolute;
   top: 0;
@@ -1229,7 +1229,7 @@ picture {
   height: 100%;
 }
 
-/* line 18, src/scss/_components/_welcome.scss */
+/* line 19, src/scss/_components/_welcome.scss */
 .welcome__bg-square {
   position: absolute;
   top: 50%;
@@ -1243,7 +1243,7 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 18, src/scss/_components/_welcome.scss */
+  /* line 19, src/scss/_components/_welcome.scss */
   .welcome__bg-square {
     max-width: 517px;
     height: 695px;
@@ -1251,85 +1251,85 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 18, src/scss/_components/_welcome.scss */
+  /* line 19, src/scss/_components/_welcome.scss */
   .welcome__bg-square {
     max-width: 417px;
     height: 595px;
   }
 }
 
-/* line 37, src/scss/_components/_welcome.scss */
+/* line 38, src/scss/_components/_welcome.scss */
 .welcome__bg-line {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 42, src/scss/_components/_welcome.scss */
+/* line 43, src/scss/_components/_welcome.scss */
 .welcome__bg-line-1 {
   top: 78px;
   max-width: 641px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 42, src/scss/_components/_welcome.scss */
+  /* line 43, src/scss/_components/_welcome.scss */
   .welcome__bg-line-1 {
     max-width: 441px;
   }
 }
 
-/* line 50, src/scss/_components/_welcome.scss */
+/* line 51, src/scss/_components/_welcome.scss */
 .welcome__bg-line-2 {
   bottom: 140px;
   max-width: 378px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 50, src/scss/_components/_welcome.scss */
+  /* line 51, src/scss/_components/_welcome.scss */
   .welcome__bg-line-2 {
     bottom: 30px;
     max-width: 278px;
   }
 }
 
-/* line 59, src/scss/_components/_welcome.scss */
+/* line 60, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div {
   width: 100%;
   height: 1px;
   background-color: #b1e4e8;
 }
 
-/* line 64, src/scss/_components/_welcome.scss */
+/* line 65, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:not(:last-of-type) {
   margin-bottom: 59px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 64, src/scss/_components/_welcome.scss */
+  /* line 65, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:not(:last-of-type) {
     margin-bottom: 49px;
   }
 }
 
-/* line 71, src/scss/_components/_welcome.scss */
+/* line 72, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(2) {
   width: -webkit-calc(100% - 48px);
   width: calc(100% - 48px);
 }
 
-/* line 74, src/scss/_components/_welcome.scss */
+/* line 75, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(3) {
   width: -webkit-calc(100% - 96px);
   width: calc(100% - 96px);
 }
 
-/* line 77, src/scss/_components/_welcome.scss */
+/* line 78, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(4) {
   width: -webkit-calc(100% - 144px);
   width: calc(100% - 144px);
 }
 
-/* line 84, src/scss/_components/_welcome.scss */
+/* line 85, src/scss/_components/_welcome.scss */
 .welcome__wrapper {
   z-index: 2;
   position: relative;
@@ -1340,7 +1340,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 84, src/scss/_components/_welcome.scss */
+  /* line 85, src/scss/_components/_welcome.scss */
   .welcome__wrapper {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -1349,18 +1349,18 @@ picture {
   }
 }
 
-/* line 92, src/scss/_components/_welcome.scss */
+/* line 93, src/scss/_components/_welcome.scss */
 .welcome__wrapper-left, .welcome__wrapper-right {
   width: 50%;
 }
 
-/* line 98, src/scss/_components/_welcome.scss */
+/* line 99, src/scss/_components/_welcome.scss */
 .welcome__wrapper-left > div {
   width: 100%;
   max-width: 570px;
 }
 
-/* line 104, src/scss/_components/_welcome.scss */
+/* line 105, src/scss/_components/_welcome.scss */
 .welcome__wrapper-right {
   position: relative;
   display: -webkit-box;
@@ -1374,20 +1374,20 @@ picture {
   padding-left: 15px;
 }
 
-/* line 110, src/scss/_components/_welcome.scss */
+/* line 111, src/scss/_components/_welcome.scss */
 .welcome__wrapper-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 118, src/scss/_components/_welcome.scss */
+/* line 119, src/scss/_components/_welcome.scss */
 .welcome__subtitle {
   padding-bottom: 56px;
   font-size: 24px;
 }
 
-/* line 123, src/scss/_components/_welcome.scss */
+/* line 124, src/scss/_components/_welcome.scss */
 .welcome__desc {
   padding-right: 15px;
   padding-bottom: 50px;
@@ -1395,7 +1395,7 @@ picture {
   line-height: 36px;
 }
 
-/* line 130, src/scss/_components/_welcome.scss */
+/* line 131, src/scss/_components/_welcome.scss */
 .welcome__slogan {
   padding-bottom: 105px;
   font-size: 24px;
@@ -1404,14 +1404,14 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 130, src/scss/_components/_welcome.scss */
+  /* line 131, src/scss/_components/_welcome.scss */
   .welcome__slogan {
     padding-bottom: 85px;
     font-size: 22px;
   }
 }
 
-/* line 141, src/scss/_components/_welcome.scss */
+/* line 142, src/scss/_components/_welcome.scss */
 .welcome__name {
   white-space: nowrap;
   font-size: 12px;
@@ -1641,7 +1641,14 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/_style.scss */
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/_style.scss */
+  .style {
+    padding-top: 100px;
+  }
+}
+
+/* line 14, src/scss/_components/_style.scss */
 .style__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1650,15 +1657,17 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 11, src/scss/_components/_style.scss */
+  /* line 14, src/scss/_components/_style.scss */
   .style__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
-/* line 17, src/scss/_components/_style.scss */
+/* line 20, src/scss/_components/_style.scss */
 .style__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1670,13 +1679,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 17, src/scss/_components/_style.scss */
+  /* line 20, src/scss/_components/_style.scss */
   .style__wrapper-left {
     padding-right: 0;
   }
 }
 
-/* line 27, src/scss/_components/_style.scss */
+/* line 30, src/scss/_components/_style.scss */
 .style__wrapper-right {
   width: 100%;
   max-width: 360px;
@@ -1686,35 +1695,33 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 27, src/scss/_components/_style.scss */
+  /* line 30, src/scss/_components/_style.scss */
   .style__wrapper-right {
     max-width: 100%;
-    padding-top: 50px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 50px;
   }
 }
 
-/* line 42, src/scss/_components/_style.scss */
+/* line 43, src/scss/_components/_style.scss */
 .style__title {
   padding-bottom: 67px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 42, src/scss/_components/_style.scss */
+  /* line 43, src/scss/_components/_style.scss */
   .style__title {
     padding-bottom: 57px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 42, src/scss/_components/_style.scss */
+  /* line 43, src/scss/_components/_style.scss */
   .style__title {
     padding-bottom: 37px;
   }
 }
 
-/* line 52, src/scss/_components/_style.scss */
+/* line 53, src/scss/_components/_style.scss */
 .style__desc {
   padding-bottom: 86px;
   font-size: 14px;
@@ -1722,20 +1729,20 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 52, src/scss/_components/_style.scss */
+  /* line 53, src/scss/_components/_style.scss */
   .style__desc {
     padding-bottom: 66px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 52, src/scss/_components/_style.scss */
+  /* line 53, src/scss/_components/_style.scss */
   .style__desc {
     padding-bottom: 46px;
   }
 }
 
-/* line 64, src/scss/_components/_style.scss */
+/* line 65, src/scss/_components/_style.scss */
 .style__block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1746,13 +1753,13 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 64, src/scss/_components/_style.scss */
+  /* line 65, src/scss/_components/_style.scss */
   .style__block {
     min-height: 672px;
   }
 }
 
-/* line 72, src/scss/_components/_style.scss */
+/* line 73, src/scss/_components/_style.scss */
 .style__block-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1767,7 +1774,7 @@ picture {
   max-width: 360px;
 }
 
-/* line 78, src/scss/_components/_style.scss */
+/* line 79, src/scss/_components/_style.scss */
 .style__block-left > div {
   position: relative;
   width: 100%;
@@ -1778,13 +1785,13 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 78, src/scss/_components/_style.scss */
+  /* line 79, src/scss/_components/_style.scss */
   .style__block-left > div {
     padding: 45px;
   }
 }
 
-/* line 89, src/scss/_components/_style.scss */
+/* line 90, src/scss/_components/_style.scss */
 .style__block-left > div:not(:last-of-type):after {
   content: '';
   position: absolute;
@@ -1796,7 +1803,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 102, src/scss/_components/_style.scss */
+/* line 103, src/scss/_components/_style.scss */
 .style__block-left p {
   padding-bottom: 19px;
   font-family: 'Raleway', sans-serif;
@@ -1805,14 +1812,14 @@ picture {
   font-size: 18px;
 }
 
-/* line 110, src/scss/_components/_style.scss */
+/* line 111, src/scss/_components/_style.scss */
 .style__block-left span {
   color: #ffffff;
   font-size: 14px;
   line-height: 24px;
 }
 
-/* line 117, src/scss/_components/_style.scss */
+/* line 118, src/scss/_components/_style.scss */
 .style__block-right {
   position: relative;
   -webkit-box-flex: 1;
@@ -2006,7 +2013,14 @@ picture {
   padding-right: 15px;
 }
 
-/* line 107, src/scss/_components/_staff.scss */
+@media screen and (max-width: 1023px) {
+  /* line 101, src/scss/_components/_staff.scss */
+  .staff__wrapper-left {
+    max-width: 100%;
+  }
+}
+
+/* line 110, src/scss/_components/_staff.scss */
 .staff__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2016,75 +2030,75 @@ picture {
   max-width: 100%;
 }
 
-/* line 114, src/scss/_components/_staff.scss */
+/* line 117, src/scss/_components/_staff.scss */
 .staff__title {
   padding-bottom: 87px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 114, src/scss/_components/_staff.scss */
+  /* line 117, src/scss/_components/_staff.scss */
   .staff__title {
     padding-bottom: 67px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 114, src/scss/_components/_staff.scss */
+  /* line 117, src/scss/_components/_staff.scss */
   .staff__title {
     padding-bottom: 47px;
   }
 }
 
-/* line 124, src/scss/_components/_staff.scss */
+/* line 127, src/scss/_components/_staff.scss */
 .staff__desc {
   color: #181818;
   line-height: 36px;
 }
 
-/* line 128, src/scss/_components/_staff.scss */
+/* line 131, src/scss/_components/_staff.scss */
 .staff__desc strong {
   font-weight: 700;
 }
 
-/* line 135, src/scss/_components/_staff.scss */
+/* line 138, src/scss/_components/_staff.scss */
 .staff__btn--prev .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 140, src/scss/_components/_staff.scss */
+/* line 143, src/scss/_components/_staff.scss */
 .staff__btn .icon-font {
   color: #b1e4e8;
   font-size: 32px;
 }
 
-/* line 147, src/scss/_components/_staff.scss */
+/* line 150, src/scss/_components/_staff.scss */
 .staff .swiper-slide {
   width: 397px !important;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-/* line 151, src/scss/_components/_staff.scss */
+/* line 154, src/scss/_components/_staff.scss */
 .staff .swiper-slide-active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-/* line 155, src/scss/_components/_staff.scss */
+/* line 158, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content {
   text-align: center;
 }
 
-/* line 158, src/scss/_components/_staff.scss */
+/* line 161, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content > div {
   position: relative;
   width: 100%;
   height: 561px;
 }
 
-/* line 168, src/scss/_components/_staff.scss */
+/* line 171, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content p {
   color: #181818;
   padding-top: 22px;
@@ -2092,7 +2106,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 175, src/scss/_components/_staff.scss */
+/* line 178, src/scss/_components/_staff.scss */
 .staff .swiper-slide-content span {
   color: #a8a5a5;
   font-size: 14px;

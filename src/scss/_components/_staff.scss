@@ -102,6 +102,9 @@
 			width: 100%;
 			max-width: 360px;
 			padding-right: 15px;
+			@include adaptive(1023) {
+				max-width: 100%;
+			}
 		}
 
 		&-right {
