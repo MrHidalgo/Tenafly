@@ -816,6 +816,137 @@ picture {
   margin-right: auto;
 }
 
+/* line 3, src/scss/_components/_menu.scss */
+.menu {
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #ffffff;
+}
+
+/* line 15, src/scss/_components/_menu.scss */
+.menu.is-animated {
+  -webkit-transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* line 21, src/scss/_components/_menu.scss */
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  height: -webkit-calc(100% - 79px);
+  height: calc(100% - 79px);
+  -webkit-transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: height 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* line 30, src/scss/_components/_menu.scss */
+.menu .menu__link {
+  min-width: 290px;
+  border-color: transparent;
+}
+
+/* line 34, src/scss/_components/_menu.scss */
+.menu .menu__link.is-active {
+  border-color: #b1e4e8;
+}
+
+/* line 38, src/scss/_components/_menu.scss */
+.menu .menu__link:hover {
+  border-color: #b1e4e8;
+}
+
+/* line 41, src/scss/_components/_menu.scss */
+.menu .menu__link:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 44, src/scss/_components/_menu.scss */
+.menu .menu__link:hover:after {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+/* line 49, src/scss/_components/_menu.scss */
+.menu .menu__link:before {
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+/* line 52, src/scss/_components/_menu.scss */
+.menu .menu__link:after {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+/* line 56, src/scss/_components/_menu.scss */
+.menu .menu__link .icon-font {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 100%;
+  color: #181819;
+  font-size: 10px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* line 71, src/scss/_components/_menu.scss */
+.menu .menu__link-wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 80, src/scss/_components/_menu.scss */
+.menu .menu__link-block {
+  position: relative;
+}
+
+/* line 84, src/scss/_components/_menu.scss */
+.menu .menu__link-dropdown {
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* line 91, src/scss/_components/_menu.scss */
+.menu .menu__link-dropdown .menu__link span {
+  text-transform: capitalize;
+}
+
 /* line 3, src/scss/_components/_main.scss */
 .main {
   position: relative;

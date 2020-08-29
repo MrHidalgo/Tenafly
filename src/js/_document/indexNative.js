@@ -94,6 +94,16 @@
 			wScrollBefore = wScrollCurrent;
 		});
 	}
+
+
+	const menuCB = () => {
+		$('[menu-link-js]').on('click', (ev) => {
+			const el = $(ev.currentTarget),
+				elParent = el.closest('.menu__link-block');
+
+			elParent.find('.menu__link-dropdown').slideToggle(350);
+		});
+	}
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -119,6 +129,7 @@
 		initPathFloatingAnimation();
 		viewportAnimation();
 		stickyHeader();
+		menuCB();
 		// ==========================================
 	};
 	initNative();

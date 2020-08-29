@@ -35,7 +35,17 @@ var initHamburger = function initHamburger() {
 		var elem = ev.currentTarget;
 
 		elem.classList.toggle("is-active");
-		mobileContainer.classList.toggle("is-open");
+
+		if (mobileContainer.classList.contains('is-open')) {
+			mobileContainer.classList.add("is-animated");
+			mobileContainer.classList.remove("is-open");
+
+			setTimeout(function () {
+				mobileContainer.classList.remove("is-animated");
+			}, 300);
+		} else {
+			mobileContainer.classList.add("is-open");
+		}
 
 		hideScrollContainer.forEach(function (val, idx) {
 			val.classList.toggle("is-hideScroll");
@@ -271,6 +281,15 @@ var initSwiper = function initSwiper() {
 			wScrollBefore = wScrollCurrent;
 		});
 	}
+
+	var menuCB = function menuCB() {
+		$('[menu-link-js]').on('click', function (ev) {
+			var el = $(ev.currentTarget),
+			    elParent = el.closest('.menu__link-block');
+
+			elParent.find('.menu__link-dropdown').slideToggle(350);
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -295,6 +314,7 @@ var initSwiper = function initSwiper() {
 		initPathFloatingAnimation();
 		viewportAnimation();
 		stickyHeader();
+		menuCB();
 		// ==========================================
 	};
 	initNative();
