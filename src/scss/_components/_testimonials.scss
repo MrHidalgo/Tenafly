@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 80px;
 	padding-bottom: 200px;
+	@include adaptive(1279) {
+		padding-bottom: 150px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -38,10 +41,25 @@
 		@include adaptive(1439) {
 			padding-left: 50px;
 		}
+		@include adaptive(1279) {
+			padding-left: 0;
+		}
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			width: 330px;
 			padding-right: 50px;
+			@include adaptive(1279) {
+				width: 300px;
+				padding-right: 40px;
+			}
+			@include adaptive(1023) {
+				width: 100%;
+				padding-right: 0;
+				padding-bottom: 50px;
+			}
 		}
 
 		&-right {
@@ -49,11 +67,20 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-left: 50px;
+			@include adaptive(1279) {
+				padding-left: 30px;
+			}
+			@include adaptive(1023) {
+				padding-left: 0;
+			}
 		}
 	}
 
 	&__title {
 		padding-bottom: 71px;
+		@include adaptive(1023) {
+			padding-bottom: 41px;
+		}
 	}
 
 	&__desc {
@@ -61,6 +88,9 @@
 		color: #181818;
 		line-height: 36px;
 		font-size: 14px;
+		@include adaptive(1023) {
+			padding-bottom: 39px;
+		}
 	}
 
 	&__block {
@@ -145,6 +175,9 @@
 			position: relative;
 			padding: 37px 30px 37px 37px;
 			background-color: #ffffff;
+			@include adaptive(1279) {
+				padding: 30px 20px 30px 30px;
+			}
 		}
 
 		&-star {
@@ -167,6 +200,9 @@
 			line-height: 24px;
 			font-style: italic;
 			color: #737373;
+			@include adaptive(1279) {
+				font-size: 14px;
+			}
 		}
 	}
 }

@@ -3,6 +3,10 @@
 .partners {
 	padding-top: 61px;
 	padding-bottom: 80px;
+	@include adaptive(1023) {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -11,6 +15,9 @@
 		&-left,
 		&-right {
 			width: 80px;
+			@include adaptive(1023) {
+				width: 55px;
+			}
 		}
 
 		&-middle {

@@ -13,7 +13,14 @@
   border: 2px solid #b1e4e8;
   box-shadow: none;
   border-radius: 0;
-	//background-color: #b1e4e8;
+	text-align: center;
+	@include adaptive(1279) {
+		height: 50px;
+	}
+	@include adaptive(1023) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
   &__wrapper {
 		display: flex;
@@ -64,6 +71,9 @@
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
 		@include transition(color);
+		@include adaptive(1279) {
+			font-size: 13px;
+		}
 	}
 
 	&--border {

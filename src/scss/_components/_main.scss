@@ -7,6 +7,9 @@
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	@include adaptive(1279) {
+		background-attachment: unset;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -41,6 +44,10 @@
 			font-weight: 300;
 			line-height: 30px;
 			text-align: center;
+			@include adaptive(1279) {
+				padding-bottom: 35px;
+				font-size: 22px;
+			}
 
 			strong {
 				font-weight: 700;

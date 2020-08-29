@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 300px;
 	padding-bottom: 370px;
+	@include adaptive(1279) {
+		padding-bottom: 230px;
+	}
 
 	&__bg {
 		position: absolute;
@@ -25,6 +28,10 @@
 				max-width: 517px;
 				height: 695px;
 			}
+			@include adaptive(1279) {
+				max-width: 417px;
+				height: 595px;
+			}
 		}
 
 		&-line {
@@ -33,13 +40,20 @@
 			width: 100%;
 
 			&-1 {
-				max-width: 641px;
 				top: 78px;
+				max-width: 641px;
+				@include adaptive(1279) {
+					max-width: 441px;
+				}
 			}
 
 			&-2 {
-				max-width: 378px;
 				bottom: 140px;
+				max-width: 378px;
+				@include adaptive(1279) {
+					bottom: 30px;
+					max-width: 278px;
+				}
 			}
 
 			> div {
@@ -49,6 +63,9 @@
 
 				&:not(:last-of-type) {
 					margin-bottom: 59px;
+					@include adaptive(1279) {
+						margin-bottom: 49px;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -68,6 +85,9 @@
 		z-index: 2;
 		position: relative;
 		display: flex;
+		@include adaptive(1279) {
+			align-items: flex-start;
+		}
 
 		&-left,
 		&-right {
@@ -112,6 +132,10 @@
 		font-size: 24px;
 		font-style: italic;
 		color: #9d9999;
+		@include adaptive(1279) {
+			padding-bottom: 85px;
+			font-size: 22px;
+		}
 	}
 
 	&__name {

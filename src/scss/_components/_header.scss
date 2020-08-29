@@ -15,6 +15,10 @@
 		height: 79px;
 		padding-left: 15px;
 		padding-right: 15px;
+		@include adaptive(1023) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 		&-left,
 		&-right {

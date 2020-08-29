@@ -9,6 +9,12 @@
 	@include adaptive(1365) {
 		font-size: 33px;
 	}
+	@include adaptive(1279) {
+		font-size: 30px;
+	}
+	@include adaptive(1023) {
+		font-size: 27px;
+	}
 
 	&--dark {
 		color: #181818;

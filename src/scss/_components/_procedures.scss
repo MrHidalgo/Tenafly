@@ -21,6 +21,9 @@
 			position: relative;
 			width: 100%;
 			max-width: calc(50% + 105px);
+			@include adaptive(1279) {
+				max-width: 45%;
+			}
 
 			img {
 				@extend %imageResCoverAbs;

@@ -3,15 +3,25 @@
 .style {
 	padding-top: 235px;
 	padding-bottom: 118px;
+	@include adaptive(1279) {
+		padding-top: 175px;
+		padding-bottom: 75px;
+	}
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
 			padding-right: 10px;
+			@include adaptive(1023) {
+				padding-right: 0;
+			}
 		}
 
 		&-right {
@@ -20,6 +30,12 @@
 			padding-top: 100px;
 			padding-left: 32px;
 			padding-right: 65px;
+			@include adaptive(1023) {
+				max-width: 100%;
+				padding-top: 50px;
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 	}
 
@@ -27,6 +43,9 @@
 		padding-bottom: 67px;
 		@include adaptive(1365) {
 			padding-bottom: 57px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 37px;
 		}
 	}
 
@@ -36,6 +55,9 @@
 		line-height: 36px;
 		@include adaptive(1365) {
 			padding-bottom: 66px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 46px;
 		}
 	}
 

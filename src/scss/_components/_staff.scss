@@ -4,6 +4,15 @@
 	position: relative;
 	padding-top: 118px;
 	padding-bottom: 83px;
+	@include adaptive(1279) {
+		padding-top: 75px;
+	}
+	@include adaptive(1023) {
+		display: flex;
+		flex-direction: column;
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
 
 	.c-grid {
 		z-index: 0;
@@ -14,6 +23,10 @@
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
+		@include adaptive(1023) {
+			position: relative;
+			padding-bottom: 50px;
+		}
 	}
 
 	&__slider {
@@ -21,11 +34,20 @@
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
+		@include adaptive(1023) {
+			padding-left: 30px;
+		}
 
 		&-left {
 			width: 100%;
 			max-width: calc(50% - 225px);
 			padding-left: 15px;
+			@include adaptive(1279) {
+				max-width: 45%;
+			}
+			@include adaptive(1023) {
+				max-width: 100%;
+			}
 		}
 
 		&-right {
@@ -69,6 +91,12 @@
 		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
+		@include adaptive(1023) {
+			position: relative;
+			top: 0;
+			transform: unset;
+			padding: 0;
+		}
 
 		&-left {
 			width: 100%;
@@ -87,6 +115,9 @@
 		padding-bottom: 87px;
 		@include adaptive(1365) {
 			padding-bottom: 67px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 47px;
 		}
 	}
 
