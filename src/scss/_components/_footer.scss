@@ -8,6 +8,10 @@
 		padding-top: 75px;
 		padding-bottom: 100px;
 	}
+	@include adaptive(767) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
 
 	&__nav {
 		display: flex;
@@ -19,6 +23,9 @@
 		}
 		@include adaptive(1023) {
 			flex-wrap: wrap;
+		}
+		@include adaptive(767) {
+			justify-content: flex-start;
 		}
 
 		&-link {
@@ -42,6 +49,9 @@
 				padding-left: 5px;
 				padding-right: 5px;
 				text-align: center;
+			}
+			@include adaptive(767) {
+				max-width: calc(100% / 2);
 			}
 
 			&:hover {
@@ -80,6 +90,9 @@
 		font-size: 13px;
 		color: #e5e5e5;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 55px;
+		}
 
 		h6 {
 			padding-bottom: 44px;

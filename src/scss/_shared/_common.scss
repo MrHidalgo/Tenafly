@@ -3,19 +3,12 @@
 .copyright {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 
 	&__text {
 		color: #e5e5e5;
 		font-size: 13px;
 	}
 }
-
-
-//[data-aos] {
-//	visibility: hidden;
-//}
-//[data-aos].animated {
-//	visibility: visible;
-//}
 
 // COMMON :: END

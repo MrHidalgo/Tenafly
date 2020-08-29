@@ -150,6 +150,9 @@
 		&-slide {
 			width: 397px !important;
 			filter: grayscale(100%);
+			@include adaptive(767) {
+				width: 300px !important;
+			}
 
 			&-active {
 				filter: grayscale(0);
@@ -162,6 +165,9 @@
 					position: relative;
 					width: 100%;
 					height: 561px;
+					@include adaptive(767) {
+						height: 461px;
+					}
 				}
 
 				img {

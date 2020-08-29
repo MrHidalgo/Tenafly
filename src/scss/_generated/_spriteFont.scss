@@ -33,8 +33,11 @@
 	@if $filename == arrow {
 		$char: "\E002";
 	}
-	@if $filename == star {
+	@if $filename == phone {
 		$char: "\E003";
+	}
+	@if $filename == star {
+		$char: "\E004";
 	}
 
 	@return $char;
@@ -57,6 +60,10 @@
 }
 .icon-arrow {
 	@include icon(arrow);
+
+}
+.icon-phone {
+	@include icon(phone);
 
 }
 .icon-star {

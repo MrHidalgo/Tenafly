@@ -15,6 +15,9 @@
 	@include adaptive(1023) {
 		font-size: 27px;
 	}
+	@include adaptive(767) {
+		font-size: 25px;
+	}
 
 	&--dark {
 		color: #181818;

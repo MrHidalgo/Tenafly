@@ -23,6 +23,9 @@
 		&-left,
 		&-right {
 			width: 200px;
+			@include adaptive(767) {
+				width: 60px;
+			}
 		}
 
 		&-middle {
@@ -40,9 +43,29 @@
 	}
 
 	&__num {
+		display: flex;
 		font-size: 14px;
 		color: #ffffff;
 		letter-spacing: 1.5px;
+		@include adaptive(767) {
+			span {
+				display: none;
+			}
+		}
+
+		span,
+		.icon-font {
+			color: #ffffff;
+		}
+
+		.icon-font {
+			display: none;
+			color: #ffffff;
+			font-size: 25px;
+			@include adaptive(767) {
+				display: flex;
+			}
+		}
 	}
 }
 

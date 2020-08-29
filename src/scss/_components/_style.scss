@@ -10,6 +10,9 @@
 	@include adaptive(1023) {
 		padding-top: 100px;
 	}
+	@include adaptive(767) {
+		padding-bottom: 55px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -69,12 +72,19 @@
 		@include adaptive(1365) {
 			min-height: 672px;
 		}
+		@include adaptive(767) {
+			min-height: unset;
+			flex-direction: column;
+		}
 
 		&-left {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
 			max-width: 360px;
+			@include adaptive(767) {
+				max-width: 100%;
+			}
 
 			> div {
 				position: relative;
@@ -120,6 +130,9 @@
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			@include adaptive(767) {
+				display: none;
+			}
 
 			img {
 				@extend %imageResCoverAbs;
