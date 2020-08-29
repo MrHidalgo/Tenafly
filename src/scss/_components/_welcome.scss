@@ -21,6 +21,10 @@
 			max-width: 617px;
 			height: 795px;
 			background-color: #ede6e8;
+			@include adaptive(1365) {
+				max-width: 517px;
+				height: 695px;
+			}
 		}
 
 		&-line {

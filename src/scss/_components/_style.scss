@@ -25,18 +25,27 @@
 
 	&__title {
 		padding-bottom: 67px;
+		@include adaptive(1365) {
+			padding-bottom: 57px;
+		}
 	}
 
 	&__desc {
 		padding-bottom: 86px;
 		font-size: 14px;
 		line-height: 36px;
+		@include adaptive(1365) {
+			padding-bottom: 66px;
+		}
 	}
 
 	&__block {
 		display: flex;
 		min-height: 772px;
 		background-color: #020202;
+		@include adaptive(1365) {
+			min-height: 672px;
+		}
 
 		&-left {
 			display: flex;
@@ -50,6 +59,9 @@
 				height: 100%;
 				max-height: calc(100% / 3);
 				padding: 65px;
+				@include adaptive(1365) {
+					padding: 45px;
+				}
 
 				&:not(:last-of-type) {
 					&:after {

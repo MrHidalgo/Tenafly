@@ -12,6 +12,13 @@
 			width: 100%;
 			max-width: 704px;
 			height: 863px;
+			@include adaptive(1439) {
+				max-width: 604px;
+				height: 763px;
+			}
+			@include adaptive(1365) {
+				height: 663px;
+			}
 
 			img {
 				@extend %imageResCoverAbs;
@@ -37,6 +44,12 @@
 		background-repeat: no-repeat;
 		background-position: right center;
 		background-size: cover;
+		@include adaptive(1535) {
+			padding-left: 75px;
+		}
+		@include adaptive(1439) {
+			padding-left: 50px;
+		}
 	}
 
 	&__title {
@@ -59,6 +72,9 @@
 
 		&:not(:last-of-type) {
 			margin-right: 120px;
+			@include adaptive(1535) {
+				margin-right: 75px;
+			}
 		}
 
 		&-1 {

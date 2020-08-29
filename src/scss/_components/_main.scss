@@ -3,15 +3,16 @@
 .main {
 	position: relative;
 	background-image: url('../img/img-main@2x.jpg');
-	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: center top;
+	background-repeat: no-repeat;
 	background-size: cover;
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		min-height: 100vh;
+		min-height: calc(100vh - 79px);
 
 		> div {
 			width: 100%;

@@ -36,6 +36,10 @@
 
 		&-bottom {
 			width: 100%;
+			@include adaptive(1365) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 
 			> div {
 				display: flex;
@@ -63,6 +67,8 @@
 		align-items: center;
 		height: 100%;
 		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
 
 		&-left {
 			width: 100%;
@@ -79,6 +85,9 @@
 
 	&__title {
 		padding-bottom: 87px;
+		@include adaptive(1365) {
+			padding-bottom: 67px;
+		}
 	}
 
 	&__desc {

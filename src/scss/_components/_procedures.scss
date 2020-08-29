@@ -9,6 +9,12 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		@include adaptive(1439) {
+			height: 815px;
+		}
+		@include adaptive(1365) {
+			height: 715px;
+		}
 
 		&-left {
 			overflow: hidden;
@@ -29,6 +35,12 @@
 			max-width: 100%;
 			padding-left: 150px;
 			padding-right: 15px;
+			@include adaptive(1535) {
+				padding-left: 100px;
+			}
+			@include adaptive(1439) {
+				padding-left: 50px;
+			}
 
 			> div {
 				width: 100%;
@@ -39,6 +51,9 @@
 
 	&__title {
 		padding-bottom: 81px;
+		@include adaptive(1365) {
+			padding-bottom: 61px;
+		}
 	}
 
 	&__desc {
@@ -46,12 +61,21 @@
 		color: #181818;
 		font-size: 14px;
 		line-height: 36px;
+		@include adaptive(1365) {
+			padding-bottom: 59px;
+		}
 	}
 
 	&__tags {
 		display: flex;
 		flex-wrap: wrap;
 		padding-bottom: 127px;
+		@include adaptive(1439) {
+			padding-bottom: 77px;
+		}
+		@include adaptive(1365) {
+			padding-bottom: 57px;
+		}
 
 		a {
 			margin-bottom: 23px;
