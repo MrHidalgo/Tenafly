@@ -728,7 +728,12 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 23, src/scss/_components/_footer.scss */
+/* line 22, src/scss/_components/_footer.scss */
+.footer__nav-link:hover {
+  color: #e5e5e5;
+}
+
+/* line 25, src/scss/_components/_footer.scss */
 .footer__nav-link:hover:after {
   opacity: 1;
   visibility: visible;
@@ -742,7 +747,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_components/_footer.scss */
+/* line 33, src/scss/_components/_footer.scss */
 .footer__nav-link:after {
   content: '';
   opacity: 0;
@@ -764,7 +769,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 47, src/scss/_components/_footer.scss */
+/* line 49, src/scss/_components/_footer.scss */
 .footer__info {
   width: 100%;
   max-width: 852px;
@@ -776,24 +781,24 @@ picture {
   text-align: center;
 }
 
-/* line 57, src/scss/_components/_footer.scss */
+/* line 59, src/scss/_components/_footer.scss */
 .footer__info h6 {
   padding-bottom: 44px;
   font-weight: 400;
 }
 
-/* line 63, src/scss/_components/_footer.scss */
+/* line 65, src/scss/_components/_footer.scss */
 .footer__info p strong {
   font-weight: 700;
 }
 
-/* line 67, src/scss/_components/_footer.scss */
+/* line 69, src/scss/_components/_footer.scss */
 .footer__info p a,
 .footer__info p span {
   color: #e5e5e5;
 }
 
-/* line 74, src/scss/_components/_footer.scss */
+/* line 76, src/scss/_components/_footer.scss */
 .footer__rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -806,7 +811,7 @@ picture {
   padding-bottom: 57px;
 }
 
-/* line 79, src/scss/_components/_footer.scss */
+/* line 81, src/scss/_components/_footer.scss */
 .footer__rating img {
   display: block;
   max-width: 100%;
