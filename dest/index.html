@@ -9,8 +9,6 @@
     <title>Tenafly</title>
     <!-- FAVICON-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&amp;family=Raleway:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
@@ -38,15 +36,20 @@
     <!-- HEADER :: END-->
     <div class="body body--start p-home">
       <!-- SECTION :: START-->
-      <section class="main" id="main" parallax-js data-stellar-background-ratio="0.985">
+      <section class="main" id="main">
+        <div class="main__bg">
+          <video loop muted autoplay>
+            <source src="media/video.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="c-grid">
           <div class="main__wrapper">
             <div>
-              <div class="main__box" data-aos="zoom-in">
+              <div class="main__box" data-aos="fade-up">
                 <div>
                   <div>
-                    <p>Dentistry with <strong>Integrity</strong> <br>& <strong>Genuine Care</strong></p><span>
-                      <u>liron gamzeh, dds</u></span>
+                    <p>Dentistry with <strong>Integrity</strong> <br>& <strong>Genuine Care</strong></p><span><i></i>
+                      <u>liron gamzeh, dds</u><i></i></span>
                   </div>
                 </div>
               </div>
@@ -60,17 +63,21 @@
       <section class="welcome" id="welcome" parallax-js>
         <div class="welcome__bg">
           <div class="welcome__bg-square" data-stellar-ratio="0.9"></div>
-          <div class="welcome__bg-line welcome__bg-line-1">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div id="welcomeLine1">
+            <div class="welcome__bg-line welcome__bg-line-1">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-          <div class="welcome__bg-line welcome__bg-line-2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div id="welcomeLine2">
+            <div class="welcome__bg-line welcome__bg-line-2">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
         <div class="c-grid">
@@ -85,7 +92,7 @@
               </div>
             </div>
             <div class="welcome__wrapper-right">
-              <p class="welcome__name">Dr. Liron Gamzeh</p><img src="img/img-welcome.jpg" srcset="img/img-welcome@2x.jpg 2x" alt="">
+              <p class="welcome__name">Dr. Liron Gamzeh</p><img src="img/img-welcome.jpg" srcset="img/img-welcome@2x.jpg 2x" alt="" welcome-img-js>
             </div>
           </div>
         </div>
@@ -93,8 +100,8 @@
       <!-- SECTION :: END-->
       <!-- SECTION :: START-->
       <section class="procedures" id="procedures" parallax-js>
-        <div class="procedures__wrapper" data-stellar-background-ratio="1.1">
-          <div class="procedures__wrapper-left"><img src="img/img-procedures.jpg" srcset="img/img-procedures@2x.jpg 2x" alt="" data-stellar-ratio="0.975"></div>
+        <div class="procedures__wrapper">
+          <div class="procedures__wrapper-left"><img src="img/img-procedures.jpg" srcset="img/img-procedures@2x.jpg 2x" alt="" data-stellar-ratio="0.935"></div>
           <div class="procedures__wrapper-right">
             <div>
               <p class="procedures__title c-title c-title--dark" data-aos="fade-up">Dental <br>Procedures</p>
@@ -123,7 +130,7 @@
                     <p>We’re Perfectionists</p><span>From the customer service to the quality of your dental care, we don't settle for anything less then perfect.</span>
                   </div>
                 </div>
-                <div class="style__block-right" parallax-js><img src="img/img-style.jpg" srcset="img/img-style@2x.jpg 2x" alt="" data-stellar-ratio="0.95"></div>
+                <div class="style__block-right"><img src="img/img-style.jpg" srcset="img/img-style@2x.jpg 2x" alt=""></div>
               </div>
             </div>
             <div class="style__wrapper-right">
@@ -201,6 +208,7 @@
       <!-- SECTION :: END-->
       <!-- SECTION :: START-->
       <section class="insurance" id="insurance">
+        <div class="insurance__bg"></div>
         <div class="insurance__wrapper" parallax-js>
           <div class="insurance__wrapper-left"><img src="img/img-insurance.jpg" srcset="img/img-insurance@2x.jpg 2x" alt="" data-stellar-ratio="1.1"></div>
           <div class="insurance__wrapper-right">
@@ -255,30 +263,30 @@
               <p class="testimonials__desc" data-aos="fade-up">At Tenafly Dental Associates we highly value patient care and quality service. See what our amazing patients are saying about us.</p>
               <div class="c-btn__wrapper" data-aos="fade-up"><a class="c-btn" href="#"><span>View More</span></a></div>
             </div>
-            <div class="testimonials__wrapper-right">
+            <div class="testimonials__wrapper-right" parallax-js>
               <div class="testimonials__block-wrapper">
-                <div class="testimonials__block testimonials__block-1" floating-node-js>
+                <div class="testimonials__block testimonials__block-1" data-stellar-ratio="1.075">
                   <div class="testimonials__block-bg"><span>MA</span></div>
                   <div class="testimonials__block-content">
                     <div class="testimonials__block-star"><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i></div>
                     <p>My husband and I both love this dentist office.  The staff and doctor are amazing!  The office is clean and the care is the best!</p>
                   </div>
                 </div>
-                <div class="testimonials__block testimonials__block-2" floating-node-js>
+                <div class="testimonials__block testimonials__block-2" data-stellar-ratio="1.1">
                   <div class="testimonials__block-bg"><span>AE</span></div>
                   <div class="testimonials__block-content">
                     <div class="testimonials__block-star"><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i></div>
                     <p>Unmatched. Mary, Madison, Doc! Great vibes place all around. Exceptionally ran office. Sent both my sisters here already. Come through and see what you're missing.</p>
                   </div>
                 </div>
-                <div class="testimonials__block testimonials__block-3" floating-node-js>
+                <div class="testimonials__block testimonials__block-3" data-stellar-ratio="1.125">
                   <div class="testimonials__block-bg"><span>RM</span></div>
                   <div class="testimonials__block-content">
                     <div class="testimonials__block-star"><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i></div>
                     <p>As a new patient, I couldn't have been more impressed by Dr. Gamzeh and staff. Super friendly atmosphere where they actually take the time to make sure you are comfortable while being efficient at the same time. I couldn't have picked a better dentist after having to change insurance providers</p>
                   </div>
                 </div>
-                <div class="testimonials__block testimonials__block-4" floating-node-js>
+                <div class="testimonials__block testimonials__block-4" data-stellar-ratio="1.15">
                   <div class="testimonials__block-bg"><span>LC</span></div>
                   <div class="testimonials__block-content">
                     <div class="testimonials__block-star"><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i><i class="icon-font icon-star"></i></div>
@@ -322,10 +330,12 @@
     <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="js/vendor.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="media/assets/aos.js"></script>
+  <script src="media/assets/ScrollMagic.min.js"></script>
+  <script src="media/assets/animation.gsap.min.js"></script>
+  <script src="media/assets/popper.min.js"></script>
+  <script src="media/assets/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->
 </html>

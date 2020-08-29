@@ -203,42 +203,6 @@ var initSwiper = function initSwiper() {
  * =============================================
  * CALLBACK :: start
  * ============================================= */
-	var initPathFloatingAnimation = function initPathFloatingAnimation() {
-		var xMin = -5,
-		    xMax = 5,
-		    yMin = -5,
-		    yMax = 5,
-		    positionsPerElement = 5,
-		    secondsPerIteration = 5,
-		    elements = $("[floating-node-js]");
-
-		for (var i = 0; i < elements.length; i++) {
-			randomFloat(elements[i], positionsPerElement, secondsPerIteration);
-		}
-
-		function random(min, max) {
-			return min + Math.random() * (max - min);
-		}
-
-		function randomFloat(element, positions, duration) {
-			var tl = new TimelineMax({
-				repeat: -1,
-				yoyo: true,
-				delay: Math.random() * duration
-			});
-
-			for (var _i = 0; _i < positions; _i++) {
-				tl.to(element, duration, {
-					x: random(xMin, xMax),
-					y: random(yMin, yMax),
-					ease: Sine.easeInOut
-				});
-			}
-
-			return tl;
-		}
-	};
-
 	var viewportAnimation = function viewportAnimation() {
 		AOS.init({
 			offset: 120,
@@ -291,6 +255,37 @@ var initSwiper = function initSwiper() {
 			elParent.find('.menu__link-dropdown').slideToggle(350);
 		});
 	};
+
+	var lineAnimation = function lineAnimation() {
+		var controller = new ScrollMagic.Controller();
+
+		var tl1 = new TimelineMax(),
+		    tl2 = new TimelineMax(),
+		    tlDoctorPhoto = new TimelineMax();
+
+		tlDoctorPhoto.set("[welcome-img-js]", {
+			opacity: 0,
+			transformOrigin: 'center',
+			y: '100'
+		});
+
+		tl1.to(".welcome__bg-line-1 div", 2, { scaleX: 0, ease: Power2.easeInOut });
+		tl2.to(".welcome__bg-line-2 div", 2, { scaleX: 0, ease: Power2.easeInOut });
+
+		tlDoctorPhoto.to('[welcome-img-js]', 1, { opacity: 1, y: 0, ease: Power2.easeInOut });
+
+		var scene1 = new ScrollMagic.Scene({ triggerElement: "#welcomeLine1", duration: 1000 }).setTween(tl1)
+		// .addIndicators({name: "1 (duration: 0)"})
+		.addTo(controller);
+
+		var scene2 = new ScrollMagic.Scene({ triggerElement: "#welcomeLine2", duration: 1000 }).setTween(tl2)
+		// .addIndicators({name: "1 (duration: 0)"})
+		.addTo(controller);
+
+		var sceneDoctor = new ScrollMagic.Scene({ triggerElement: "#welcome", duration: 1000 }).setTween(tlDoctorPhoto)
+		// .addIndicators({name: "Doctor"})
+		.addTo(controller);
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -312,10 +307,10 @@ var initSwiper = function initSwiper() {
 		// ==========================================
 
 		// callback
-		initPathFloatingAnimation();
 		viewportAnimation();
 		stickyHeader();
 		menuCB();
+		lineAnimation();
 		// ==========================================
 	};
 	initNative();

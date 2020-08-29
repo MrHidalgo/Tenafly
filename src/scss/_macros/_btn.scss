@@ -10,10 +10,12 @@
   height: 57px;
 	padding-left: 30px;
 	padding-right: 30px;
-  border: 2px solid #b1e4e8;
+  border: 0 solid #b1e4e8;
   box-shadow: none;
   border-radius: 0;
+	background-color: #b1e4e8;
 	text-align: center;
+	@include transition(background-color);
 	@include adaptive(1279) {
 		height: 50px;
 	}
@@ -31,37 +33,44 @@
 	}
 
 	&:hover {
-		&:before,
-		&:after {
-			@include transition(transform);
-		}
+		background-color: #000000;
+		@include transition(background-color);
 
-		&:before {
-			transform: scaleX(0);
+		span {
+			color: #ffffff;
+			@include transition(color);
 		}
-		&:after {
-			transform: scaleY(0);
-		}
-	}
-
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #b1e4e8;
-		@include transition(transform);
+		//&:before,
+		//&:after {
+		//	@include transition(transform);
+		//}
+		//
+		//&:before {
+		//	transform: scaleX(0);
+		//}
+		//&:after {
+		//	transform: scaleY(0);
+		//}
 	}
 
-	&:before {
-		transform: scaleX(1);
-	}
-	&:after {
-		transform: scaleY(1);
-	}
+	//&:before,
+	//&:after {
+	//	content: '';
+	//	position: absolute;
+	//	top: 0;
+	//	left: 0;
+	//	width: 100%;
+	//	height: 100%;
+	//	background-color: #b1e4e8;
+	//	@include transition(transform);
+	//}
+	//
+	//&:before {
+	//	transform: scaleX(1);
+	//}
+	//&:after {
+	//	transform: scaleY(1);
+	//}
 
 	span {
 		z-index: 2;

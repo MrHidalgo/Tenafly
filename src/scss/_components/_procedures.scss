@@ -24,6 +24,11 @@
 			position: relative;
 			width: 100%;
 			max-width: calc(50% + 105px);
+			//background-image: url('../img/img-procedures@2x.jpg');
+			//background-attachment: fixed;
+			//background-repeat: no-repeat;
+			//background-position: center;
+			//background-size: cover;
 			@include adaptive(1279) {
 				max-width: 45%;
 			}
@@ -39,19 +44,29 @@
 
 		&-right {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			padding-top: 224px;
 			padding-left: 150px;
 			padding-right: 15px;
 			@include adaptive(1535) {
+				padding-top: 204px;
 				padding-left: 100px;
 			}
 			@include adaptive(1439) {
+				padding-top: 174px;
 				padding-left: 50px;
 			}
+			@include adaptive(1279) {
+				padding-top: 124px;
+			}
+			@include adaptive(1023) {
+				padding-top: 94px;
+			}
 			@include adaptive(767) {
+				padding-top: 54px;
 				padding-left: 15px
 			}
 
@@ -76,7 +91,7 @@
 	}
 
 	&__desc {
-		padding-bottom: 79px;
+		padding-bottom: 69px;
 		color: #181818;
 		font-size: 14px;
 		line-height: 36px;
@@ -91,7 +106,7 @@
 	&__tags {
 		display: flex;
 		flex-wrap: wrap;
-		padding-bottom: 127px;
+		padding-bottom: 104px;
 		@include adaptive(1439) {
 			padding-bottom: 77px;
 		}

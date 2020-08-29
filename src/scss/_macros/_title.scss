@@ -6,6 +6,7 @@
 	color: #ffffff;
 	font-weight: 300;
 	font-size: 36px;
+	line-height: 36px;
 	@include adaptive(1365) {
 		font-size: 33px;
 	}

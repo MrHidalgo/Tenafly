@@ -1,18 +1,24 @@
 // SECTION :: START
 
-section#main.main(parallax-js data-stellar-background-ratio="0.985")
+section#main.main
+	.main__bg
+		video(loop muted autoplay)
+			source(src="media/video.mp4" type="video/mp4")
+
 	.c-grid
 		.main__wrapper
 
 			div
 
-				.main__box(data-aos="zoom-in")
+				.main__box(data-aos="fade-up")
 					div
 						div
 							p!= "Dentistry with <strong>Integrity</strong> <br>& <strong>Genuine Care</strong>"
 
 							span
+								i
 								u liron gamzeh, dds
+								i
 
 				.c-btn__wrapper.c-btn__wrapper--center(data-aos="fade-up" data-aos-delay="200")
 					a.c-btn(href="#")

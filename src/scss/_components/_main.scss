@@ -2,15 +2,36 @@
 
 .main {
 	position: relative;
-	background-image: url('../img/img-main@2x.jpg');
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	@include adaptive(1279) {
-		background-attachment: unset;
+	//background-image: url('../img/img-main@2x.jpg');
+	//background-position: center top;
+	//background-repeat: no-repeat;
+	//background-size: cover;
+	//@include adaptive(1279) {
+	//	background-attachment: unset;
+	//}
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 
 	&__wrapper {
+		z-index: 2;
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -39,7 +60,7 @@
 			justify-content: center;
 			min-height: 222px;
 			padding: 18px;
-			background-color: #ffffff;
+			background-color: rgba(#ffffff, 0.8);
 		}
 
 		p {
@@ -49,6 +70,7 @@
 			font-weight: 300;
 			line-height: 30px;
 			text-align: center;
+			font-family: 'Raleway', sans-serif;
 			@include adaptive(1279) {
 				padding-bottom: 35px;
 				font-size: 22px;
@@ -62,27 +84,25 @@
 		span {
 			position: relative;
 			display: flex;
+			align-items: center;
 			justify-content: center;
 
-			&:before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 0;
-				transform: translateY(-50%);
-				width: 100%;
+			i {
+				flex: 1;
+				min-width: 1px;
+				max-width: 100%;
 				height: 1px;
 				background-color: rgba(#000, 0.24);
 			}
 
 			u {
 				z-index: 2;
-				position: relative;
+				display: block;
+				white-space: nowrap;
 				padding-left: 10px;
 				padding-right: 10px;
 				text-transform: uppercase;
 				text-decoration: none;
-				background-color: #ffffff;
 				font-size: 12px;
 				color: #3c3b3b;
 				font-family: 'Raleway', sans-serif;

@@ -74,7 +74,7 @@
 		}
 		@include adaptive(767) {
 			min-height: unset;
-			flex-direction: column;
+			flex-direction: column-reverse;
 		}
 
 		&-left {
@@ -131,11 +131,15 @@
 			min-width: 1px;
 			max-width: 100%;
 			@include adaptive(767) {
-				display: none;
+				overflow: hidden;
+				height: 400px;
 			}
 
 			img {
 				@extend %imageResCoverAbs;
+				@include adaptive(767) {
+					position: relative;
+				}
 			}
 		}
 	}
