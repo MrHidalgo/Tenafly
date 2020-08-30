@@ -1419,6 +1419,9 @@ picture {
   width: 100%;
   height: 1px;
   background-color: #b1e4e8;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: left center;
       -ms-transform-origin: left center;
           transform-origin: left center;
@@ -1426,68 +1429,68 @@ picture {
           backface-visibility: hidden;
 }
 
-/* line 95, src/scss/_components/_welcome.scss */
+/* line 96, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:not(:last-of-type) {
   margin-bottom: 59px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 95, src/scss/_components/_welcome.scss */
+  /* line 96, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:not(:last-of-type) {
     margin-bottom: 49px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 95, src/scss/_components/_welcome.scss */
+  /* line 96, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:not(:last-of-type) {
     margin-bottom: 30px;
   }
 }
 
-/* line 105, src/scss/_components/_welcome.scss */
+/* line 106, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(2) {
   width: -webkit-calc(100% - 48px);
   width: calc(100% - 48px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 105, src/scss/_components/_welcome.scss */
+  /* line 106, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:nth-of-type(2) {
     width: -webkit-calc(100% - 28px);
     width: calc(100% - 28px);
   }
 }
 
-/* line 111, src/scss/_components/_welcome.scss */
+/* line 112, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(3) {
   width: -webkit-calc(100% - 96px);
   width: calc(100% - 96px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 111, src/scss/_components/_welcome.scss */
+  /* line 112, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:nth-of-type(3) {
     width: -webkit-calc(100% - 56px);
     width: calc(100% - 56px);
   }
 }
 
-/* line 117, src/scss/_components/_welcome.scss */
+/* line 118, src/scss/_components/_welcome.scss */
 .welcome__bg-line > div:nth-of-type(4) {
   width: -webkit-calc(100% - 144px);
   width: calc(100% - 144px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 117, src/scss/_components/_welcome.scss */
+  /* line 118, src/scss/_components/_welcome.scss */
   .welcome__bg-line > div:nth-of-type(4) {
     width: -webkit-calc(100% - 84px);
     width: calc(100% - 84px);
   }
 }
 
-/* line 127, src/scss/_components/_welcome.scss */
+/* line 128, src/scss/_components/_welcome.scss */
 .welcome__wrapper {
   z-index: 2;
   position: relative;
@@ -1498,7 +1501,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 127, src/scss/_components/_welcome.scss */
+  /* line 128, src/scss/_components/_welcome.scss */
   .welcome__wrapper {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -1508,7 +1511,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 127, src/scss/_components/_welcome.scss */
+  /* line 128, src/scss/_components/_welcome.scss */
   .welcome__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1516,33 +1519,33 @@ picture {
   }
 }
 
-/* line 138, src/scss/_components/_welcome.scss */
+/* line 139, src/scss/_components/_welcome.scss */
 .welcome__wrapper-left, .welcome__wrapper-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 138, src/scss/_components/_welcome.scss */
+  /* line 139, src/scss/_components/_welcome.scss */
   .welcome__wrapper-left, .welcome__wrapper-right {
     width: 100%;
   }
 }
 
-/* line 147, src/scss/_components/_welcome.scss */
+/* line 148, src/scss/_components/_welcome.scss */
 .welcome__wrapper-left > div {
   width: 100%;
   max-width: 570px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 147, src/scss/_components/_welcome.scss */
+  /* line 148, src/scss/_components/_welcome.scss */
   .welcome__wrapper-left > div {
     max-width: 100%;
     padding-bottom: 50px;
   }
 }
 
-/* line 157, src/scss/_components/_welcome.scss */
+/* line 158, src/scss/_components/_welcome.scss */
 .welcome__wrapper-right {
   position: relative;
   display: -webkit-box;
@@ -1557,34 +1560,34 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 157, src/scss/_components/_welcome.scss */
+  /* line 158, src/scss/_components/_welcome.scss */
   .welcome__wrapper-right {
     padding-left: 0;
   }
 }
 
-/* line 166, src/scss/_components/_welcome.scss */
+/* line 167, src/scss/_components/_welcome.scss */
 .welcome__wrapper-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 174, src/scss/_components/_welcome.scss */
+/* line 175, src/scss/_components/_welcome.scss */
 .welcome__subtitle {
   padding-bottom: 56px;
   font-size: 24px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 174, src/scss/_components/_welcome.scss */
+  /* line 175, src/scss/_components/_welcome.scss */
   .welcome__subtitle {
     padding-bottom: 40px;
     font-size: 20px;
   }
 }
 
-/* line 183, src/scss/_components/_welcome.scss */
+/* line 184, src/scss/_components/_welcome.scss */
 .welcome__desc {
   padding-right: 15px;
   padding-bottom: 50px;
@@ -1593,14 +1596,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 183, src/scss/_components/_welcome.scss */
+  /* line 184, src/scss/_components/_welcome.scss */
   .welcome__desc {
     padding-right: 0;
     padding-bottom: 40px;
   }
 }
 
-/* line 194, src/scss/_components/_welcome.scss */
+/* line 195, src/scss/_components/_welcome.scss */
 .welcome__slogan {
   padding-bottom: 105px;
   font-size: 24px;
@@ -1609,7 +1612,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 194, src/scss/_components/_welcome.scss */
+  /* line 195, src/scss/_components/_welcome.scss */
   .welcome__slogan {
     padding-bottom: 85px;
     font-size: 22px;
@@ -1617,13 +1620,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 194, src/scss/_components/_welcome.scss */
+  /* line 195, src/scss/_components/_welcome.scss */
   .welcome__slogan {
     padding-bottom: 50px;
   }
 }
 
-/* line 208, src/scss/_components/_welcome.scss */
+/* line 209, src/scss/_components/_welcome.scss */
 .welcome__name {
   white-space: nowrap;
   font-size: 12px;
@@ -2482,7 +2485,7 @@ picture {
   width: 100%;
   height: -webkit-calc(100% - (35px + 47px + 61px));
   height: calc(100% - (35px + 47px + 61px));
-  background-image: url("../img/img-insurance-bg@2x.jpg");
+  background-image: url("../img/img-insurance-bg.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   -webkit-background-size: cover;
@@ -2605,103 +2608,112 @@ picture {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  /* line 71, src/scss/_components/_insurance.scss */
+  .insurance__content {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   /* line 71, src/scss/_components/_insurance.scss */
   .insurance__content {
     padding-left: 15px;
+    padding-bottom: 40px;
   }
 }
 
-/* line 91, src/scss/_components/_insurance.scss */
+/* line 96, src/scss/_components/_insurance.scss */
 .insurance__title {
   min-height: 153px;
   padding-bottom: 51px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 91, src/scss/_components/_insurance.scss */
+  /* line 96, src/scss/_components/_insurance.scss */
   .insurance__title {
     min-height: unset;
     padding-bottom: 40px;
   }
 }
 
-/* line 100, src/scss/_components/_insurance.scss */
+/* line 105, src/scss/_components/_insurance.scss */
 .insurance__desc {
   line-height: 36px;
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 105, src/scss/_components/_insurance.scss */
+/* line 110, src/scss/_components/_insurance.scss */
 .insurance__desc-2 {
   padding-bottom: 77px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 105, src/scss/_components/_insurance.scss */
+  /* line 110, src/scss/_components/_insurance.scss */
   .insurance__desc-2 {
     padding-bottom: 57px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 105, src/scss/_components/_insurance.scss */
+  /* line 110, src/scss/_components/_insurance.scss */
   .insurance__desc-2 {
     padding-bottom: 40px;
   }
 }
 
-/* line 116, src/scss/_components/_insurance.scss */
+/* line 121, src/scss/_components/_insurance.scss */
 .insurance__block {
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 116, src/scss/_components/_insurance.scss */
+  /* line 121, src/scss/_components/_insurance.scss */
   .insurance__block {
     width: 100%;
   }
 }
 
-/* line 122, src/scss/_components/_insurance.scss */
+/* line 127, src/scss/_components/_insurance.scss */
 .insurance__block:not(:last-of-type) {
   margin-right: 120px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 122, src/scss/_components/_insurance.scss */
+  /* line 127, src/scss/_components/_insurance.scss */
   .insurance__block:not(:last-of-type) {
     margin-right: 75px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 122, src/scss/_components/_insurance.scss */
+  /* line 127, src/scss/_components/_insurance.scss */
   .insurance__block:not(:last-of-type) {
     margin-right: 55px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 122, src/scss/_components/_insurance.scss */
+  /* line 127, src/scss/_components/_insurance.scss */
   .insurance__block:not(:last-of-type) {
     margin-right: 0;
     margin-bottom: 40px;
   }
 }
 
-/* line 136, src/scss/_components/_insurance.scss */
+/* line 141, src/scss/_components/_insurance.scss */
 .insurance__block-1 {
   max-width: 255px;
 }
 
-/* line 140, src/scss/_components/_insurance.scss */
+/* line 145, src/scss/_components/_insurance.scss */
 .insurance__block-2 {
   max-width: 385px;
 }
 
-/* line 144, src/scss/_components/_insurance.scss */
+/* line 149, src/scss/_components/_insurance.scss */
 .insurance__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2710,7 +2722,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, src/scss/_components/_insurance.scss */
+  /* line 149, src/scss/_components/_insurance.scss */
   .insurance__block-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

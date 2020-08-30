@@ -269,8 +269,8 @@ var initSwiper = function initSwiper() {
 			y: '100'
 		});
 
-		tl1.to(".welcome__bg-line-1 div", 2, { scaleX: 0, ease: Power2.easeInOut });
-		tl2.to(".welcome__bg-line-2 div", 2, { scaleX: 0, ease: Power2.easeInOut });
+		tl1.to(".welcome__bg-line-1 div", 2, { scaleX: 1, ease: Power2.easeInOut });
+		tl2.to(".welcome__bg-line-2 div", 2, { scaleX: 1, ease: Power2.easeInOut });
 
 		tlDoctorPhoto.to('[welcome-img-js]', 1, { opacity: 1, y: 0, ease: Power2.easeInOut });
 

@@ -15,7 +15,7 @@
 		left: 0;
 		width: 100%;
 		height: calc(100% - (35px + 47px + 61px));
-		background-image: url('../img/img-insurance-bg@2x.jpg');
+		background-image: url('../img/img-insurance-bg.jpg');
 		background-repeat: no-repeat;
 		background-position: right center;
 		background-size: cover;
@@ -83,8 +83,13 @@
 		@include adaptive(1279) {
 			padding-left: 30px;
 		}
+		@include adaptive(1023) {
+			padding-top: 100px;
+			padding-bottom: 0;
+		}
 		@include adaptive(767) {
 			padding-left: 15px;
+			padding-bottom: 40px;
 		}
 	}
 
