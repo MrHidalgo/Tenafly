@@ -248,7 +248,7 @@ var initSwiper = function initSwiper() {
 	}
 
 	var menuCB = function menuCB() {
-		$('[menu-link-js]').on('click', function (ev) {
+		$('[menu-link-js] .icon-font').on('click', function (ev) {
 			var el = $(ev.currentTarget),
 			    elParent = el.closest('.menu__link-block');
 

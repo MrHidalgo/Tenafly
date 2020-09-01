@@ -60,7 +60,7 @@
 
 
 	const menuCB = () => {
-		$('[menu-link-js]').on('click', (ev) => {
+		$('[menu-link-js] .icon-font').on('click', (ev) => {
 			const el = $(ev.currentTarget),
 				elParent = el.closest('.menu__link-block');
 
